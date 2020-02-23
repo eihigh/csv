@@ -20,6 +20,10 @@ func NewReader(r io.Reader) *Reader {
 
 type Writer = csv.Writer
 
+func NewWriter(w io.Writer) *Writer {
+	return csv.NewWriter(w)
+}
+
 type ParseError = csv.ParseError
 
 type Scanner struct {
